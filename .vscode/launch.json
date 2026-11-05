@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node-terminal",
+            "name": "Run Ensemble (mvn exec)",
+            "request": "launch",
+            "command": "mvn org.codehaus.mojo:exec-maven-plugin:3.5.0:java \"-Dexec.mainClass=ensemble.EnsembleApp\"",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "node-terminal",
+            "name": "Compile and Run Ensemble (mvn exec)",
+            "request": "launch",
+            "command": "mvn compile org.codehaus.mojo:exec-maven-plugin:3.5.0:java \"-Dexec.mainClass=ensemble.EnsembleApp\"",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
